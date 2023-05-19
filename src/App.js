@@ -10,6 +10,7 @@ import TeamPage from './pages/Team';
 import ContactPage from './pages/ContactPage';
 import BookingPage from './pages/BookPage';
 import PrivacyPage from './pages/PrivacyPage';
+import ChatButton from './components/Chatbutton';
 
 function App() {
   const {t, i18n } = useTranslation()
@@ -25,6 +26,7 @@ function App() {
         <Route path='/book' element={<BookingPage />}/>
         <Route path='/privacy-policy' element={<PrivacyPage />}/>
       </Routes>
+      <ChatButton />
       <Footer />
     </div>
   );
