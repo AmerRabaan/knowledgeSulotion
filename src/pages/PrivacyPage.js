@@ -4,7 +4,7 @@ import Disclaimer from '../components/privacy/ArabicPrivacy'
 import { useTranslation } from 'react-i18next'
 
 function PrivacyPage() {
-    const {t,i18n} = useTranslation()
+    const {i18n} = useTranslation()
   return (
     <div>
         {i18n.language === 'ar'? <Disclaimer /> : <PrivacyPolicy />}

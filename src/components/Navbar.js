@@ -3,7 +3,6 @@ import {
   Navbar,
   MobileNav,
   Typography,
-  Button,
   IconButton,
 } from "@material-tailwind/react";
 import { useTranslation } from "react-i18next";
@@ -16,8 +15,6 @@ export default function Example() {
   const {t, i18n } = useTranslation()
   const [clicked, setClicked] = useState(false)
 
-  const logoAr = '../../public/logoAr.png';
-  const logoEn = '../../public/logoEn.png';
 
     const handleLanguageChange = (e) => {
         // handle language change here

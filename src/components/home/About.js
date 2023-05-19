@@ -4,8 +4,6 @@ import { FaBolt, FaBalanceScale, FaMagic, FaUserFriends } from "react-icons/fa";
 
 const About1 = () => {
   const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === "ar";
-  const iconSize = 32;
 
   return (
     <div
@@ -108,7 +106,7 @@ const About1 = () => {
             </div>
             <div className="flex flex-col gap-4">
               <div className="flex gap-4 items-center">
-              {i18n.language != "ar"?<FaMagic style={{
+              {i18n.language !== "ar"?<FaMagic style={{
       color: "#009FFD",
     }} className="w-8 h-8" />:<FaMagic style={{
         color: "#28EDA5 ",
@@ -118,7 +116,7 @@ const About1 = () => {
                 </p>
               </div>
               <div className="flex gap-4 items-center">
-              {i18n.language != "ar"?<FaUserFriends style={{
+              {i18n.language !== "ar"?<FaUserFriends style={{
       color: "#009FFD",
     }} className="w-8 h-8" />:<FaUserFriends style={{
         color: "#28EDA5 ",

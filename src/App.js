@@ -1,8 +1,5 @@
 import { Route, Routes } from 'react-router';
-import logo from './logo.svg';
-import { useTranslation } from 'react-i18next';
 import Home from './pages/Home';
-import About from './pages/About';
 import  Navbar  from './components/Navbar';
 import Footer from './components/Footer';
 import Services from './pages/Services';
@@ -13,7 +10,7 @@ import PrivacyPage from './pages/PrivacyPage';
 import ChatButton from './components/Chatbutton';
 
 function App() {
-  const {t, i18n } = useTranslation()
+
   return (
     <div className="App">
       <Navbar />   
