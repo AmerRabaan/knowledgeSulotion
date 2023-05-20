@@ -133,7 +133,7 @@ function ContactForm() {
             </div>
             <div className="grow ml-6">
               <p className="font-bold mb-1">{t('contactVemail')}</p>
-              <a href="mailto:support@example.com" >support@example.com</a>
+              <a href="mailto:info@getconsultationatks.com" >info@getconsultationatks.com</a>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ function ContactForm() {
             </div>
             <div className="grow ml-6">
               <p className="font-bold mb-1">{t('contactVmobile')}</p>
-              <a href="tel:+966123456123" >+966 123 456 123</a>
+              <a href="tel:+966122611784" >+966 122 611 784</a>
             </div>
           </div>
         </div>
