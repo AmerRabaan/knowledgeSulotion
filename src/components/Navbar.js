@@ -82,11 +82,15 @@ export default function Example() {
   <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
     <div className="">
       <Link to="/">
-        <img
-          src={i18n.language === 'ar' ? './logoAr.png' : './logoEn.png'}
+      {i18n.language === 'ar' ? <img
+          src={require('./logoAr2.png')}
           alt="Logo"
-          style={{ width: 150, height:140 }}
-        />
+          style={{ width: 150 }}
+        /> : <img
+        src={require('./logoEn.png')}
+        alt="Logo"
+        style={{ width: 200}}
+      />}
       </Link>
     </div>
     <div className="hidden lg:block">{navList}</div>
