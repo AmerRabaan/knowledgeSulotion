@@ -14,9 +14,11 @@ const BookingPage = () => {
       </Helmet>
       
       
-      <div class="calendly-inline-widget" data-url="https://calendly.com/info-nee/30min?primary_color=009ffd" style={{ minWidth: '320px', height: '700px' }}></div>
+      <div class="calendly-inline-widget" data-url="https://calendly.com/info-nee/quick-discussion" style={{ minWidth: '320px', height: '700px' }}></div>
     </div>
   );
 };
+
+
 
 export default BookingPage;

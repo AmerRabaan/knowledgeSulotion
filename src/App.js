@@ -8,6 +8,8 @@ import ContactPage from './pages/ContactPage';
 import BookingPage from './pages/BookPage';
 import PrivacyPage from './pages/PrivacyPage';
 import ChatButton from './components/Chatbutton';
+import Career from './pages/Career';
+import Careerbutton from './components/Careerbutton';
 
 function App() {
 
@@ -22,7 +24,9 @@ function App() {
         <Route path='/contact' element={<ContactPage />}/>
         <Route path='/book' element={<BookingPage />}/>
         <Route path='/privacy-policy' element={<PrivacyPage />}/>
+        <Route path='/career' element={<Career />}/>
       </Routes>
+      <Careerbutton />
       <ChatButton />
       <Footer />
     </div>

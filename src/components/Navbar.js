@@ -66,9 +66,21 @@ export default function Example() {
     variant="small"
     color="blue-gray"
     className="p-1 font-normal"
-  >
-    <Link to="/contact" className="flex items-center font-semibold">
+      >
+      <Link to="/contact" className="flex items-center font-semibold">
       {t('contact')}
+        </Link>
+    
+  </Typography>
+  <Typography
+    as="li"
+    variant="small"
+    color="blue-gray"
+    className="p-1 font-normal"
+  >
+
+        <Link to="/career" className="flex items-center font-semibold">
+      {t('career')}
     </Link>
   </Typography>
 </ul>
