@@ -10,6 +10,16 @@ const SmallClients = () => {
       name: "Client 2",
       logo: require('../../assets/images/inzagr.png'),
     }
+    ,
+    {
+      name: "الحناكي للتجارة",
+      logo: require('../../assets/images/hanaky.png'),
+      title: "الحناكي للأغذية والاعلاف"
+    },
+    {
+      name: "المطوع للنقليات",
+      logo: require('../../assets/images/m.png'),
+    }
   ];
 
   return (

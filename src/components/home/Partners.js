@@ -5,22 +5,14 @@ import { motion } from "framer-motion";
 const clients = [
   {
     name: "Client 1",
-    logo: require('../../assets/images/frimex.png'),
+        logo: require('../../assets/images/mena.png'),
+    website: "https://menaitech.com/en/"
   },
   {
     name: "Client 2",
-    logo: require('../../assets/images/inzagr.png'),
-    website: "https://www.binzagr.com.sa/ar.html"
+    logo: require('../../assets/images/repzo.png'),
+    website: "https://www.repzo.com/"
   },
-  {
-    name: "الحناكي للتجارة",
-    logo: require('../../assets/images/hanaky.png'),
-    title: "الحناكي للأغذية والاعلاف"
-  },
-  {
-    name: "المطوع للنقليات",
-    logo: require('../../assets/images/m.png'),
-  }
 ];
 
 const logoVariants = {
@@ -28,17 +20,18 @@ const logoVariants = {
   visible: { opacity: 1, scale: 1, rotate: 0 }
 };
 
-function Clients() {
+function Partners() {
   const { t, i18n } = useTranslation();
 
   return (
-    <div  className="text-center mb-8 mt-10">
+    <div className="text-center" style={{backgroundColor: '#f5f5f5'}}>
       <h2 style={{
         background: "linear-gradient(to left, #009FFD, #28EDA5)",
         WebkitBackgroundClip: "text",
-        WebkitTextFillColor: "transparent",
-      }} className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{t('clients')}</h2>
-      <div style={{alignItems:'center'}} className="flex flex-wrap justify-center">
+              WebkitTextFillColor: "transparent",
+        paddingTop:10
+      }} className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">{t('partners')}</h2>
+      <div className="flex flex-wrap justify-center" style={{ alignItems:'center', justifyContent:'center', alignContent:'center'}}>
         {clients.map((client, index) => (
           <motion.a
             key={index}
@@ -51,7 +44,6 @@ function Clients() {
             transition={{ delay: index * 0.3, repeat: Infinity, repeatType: "reverse", duration: 1.5 }}
           >
             <img src={client.logo} alt={client.name} className="w-80 md:w-60 sm:w-48 h-auto" />
-            {client.title && <p className='font-bold'>{client.title}</p>}
           </motion.a>
         ))}
       </div>
@@ -59,4 +51,4 @@ function Clients() {
   );
 }
 
-export default Clients;
+export default Partners;

@@ -26,7 +26,6 @@ function App() {
         <Route path='/privacy-policy' element={<PrivacyPage />}/>
         <Route path='/career' element={<Career />}/>
       </Routes>
-      <Careerbutton />
       <ChatButton />
       <Footer />
     </div>

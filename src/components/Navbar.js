@@ -88,147 +88,73 @@ export default function Example() {
   );
 
  
- 
+  const languageText = i18n.language === 'ar' ? 'English' : 'عربي';
   return (
-    <Navbar className="mx-auto max-w-screen-xl py-1 px-4 lg:px-8 lg:py-2 text-black">
-  <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+    <Navbar className="py-1 px-4 lg:px-8 lg:py-2 text-black">
+  <div className="flex items-center justify-between text-blue-gray-900">
     <div className="">
       <Link to="/">
-      {i18n.language === 'ar' ? <img
-          src={require('./logoAr2.png')}
-          alt="Logo"
-          style={{ width: 150 }}
-        /> : <img
-        src={require('./logoEn.png')}
-        alt="Logo"
-        style={{ width: 200}}
-      />}
+        {i18n.language === 'ar' ? (
+          <img src={require('./logoAr2.png')} alt="Logo" style={{ width: 150 }} />
+        ) : (
+          <img src={require('./logoEn.png')} alt="Logo" style={{ width: 200 }} />
+        )}
       </Link>
     </div>
     <div className="hidden lg:block">{navList}</div>
-    <div variant="gradient" size="sm" className="hidden lg:inline-block">
-            {/* Language Switch */}
-      {clicked? <div className="relative inline-block w-10 mr-2 align-middle select-none">
-      <text className='text-lg text-black'>
-        En
-        </text>
-  <input
-    type="checkbox"
-    name="toggle"
-    id="toggle"
-    className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer right-0 text-black"
-    onChange={handleLanguageChange}
-  />
-  <label
-    htmlFor="toggle"
-    style={{
-        backgroundColor:'#28EDA5'
-      }}
-    className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer "
-  >
-  </label>
-</div> :  <div className="relative inline-block w-10 mr-2 align-middle select-none">
-        <text className='text-lg text-black'>
-            ع
-        </text>
-        <input
-          type="checkbox"
-          name="toggle"
-          id="toggle"
-          className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
-          onChange={handleLanguageChange}
-        />
-        <label
-        style={{
-            backgroundColor:'#009FFD'
-          }}
-          htmlFor="toggle"
-          className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
+    <div className="relative inline-block w-10 mr-2 align-middle select-none">
+      <span
+        className='text-lg text-black cursor-pointer'
+        onClick={() => handleLanguageChange(i18n.language === 'ar' ? 'en' : 'ar')}
+      >
+        {languageText}
+      </span>
+    </div>
+    <IconButton
+      variant="text"
+      className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+      ripple={false}
+      onClick={() => setOpenNav(!openNav)}
+    >
+      {openNav ? (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          className="h-6 w-6"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          strokeWidth={2}
         >
-            
-        </label>
-      </div> }
-
-
-
-        </div>
-        <IconButton
-          variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
-          ripple={false}
-          onClick={() => setOpenNav(!openNav)}
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      ) : (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2}
         >
-          {openNav ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              className="h-6 w-6"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </IconButton>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      )}
+    </IconButton>
+  </div>
+  <MobileNav open={openNav}>
+    <div className="container mx-auto">
+      {navList}
+      <div className="relative inline-block w-10 mr-2 align-middle select-none">
+        <span
+          className='text-lg text-black cursor-pointer'
+          onClick={() => handleLanguageChange(i18n.language === 'ar' ? 'en' : 'ar')}
+        >
+          {languageText}
+        </span>
       </div>
-      <MobileNav open={openNav}>
-        <div className="container mx-auto ">
-          {navList}
-          {clicked? <div className="relative inline-block w-10 mr-2 align-middle select-none">
-      <text className='text-lg text-black'>
-        En
-        </text>
-  <input
-    type="checkbox"
-    name="toggle"
-    id="toggle"
-    className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer right-0 text-black"
-    onChange={handleLanguageChange}
-  />
-  <label
-    htmlFor="toggle"
-    className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer bg-gray-900"
-  >
-  </label>
-</div> :  <div className="relative inline-block w-10 mr-2 align-middle select-none">
-        <text className='text-lg text-black'>
-            ع
-        </text>
-        <input
-          type="checkbox"
-          name="toggle"
-          id="toggle"
-          className="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer"
-          onChange={handleLanguageChange}
-        />
-        <label
-          htmlFor="toggle"
-          className="toggle-label block overflow-hidden h-6 rounded-full bg-gray-300 cursor-pointer"
-        >
-            
-        </label>
-      </div> }
-        </div>
-      </MobileNav>
-    </Navbar>
+    </div>
+  </MobileNav>
+</Navbar>
+
+
   );
 }
