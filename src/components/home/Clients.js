@@ -20,6 +20,11 @@ const clients = [
   {
     name: "المطوع للنقليات",
     logo: require('../../assets/images/m.png'),
+  },
+  {
+    name: "الشركة الوطنية لصناعة البسكويت والحلويات",
+    logo: require('../../assets/images/nbcc.png'),
+    title: "الشركة الوطنية لصناعة البسكويت والحلويات",
   }
 ];
 
