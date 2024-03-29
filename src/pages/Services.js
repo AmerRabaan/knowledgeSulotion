@@ -8,7 +8,7 @@ function Services() {
   return (
     <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
       <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-gray-100">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
@@ -34,7 +34,6 @@ function Services() {
           </div>
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-
               <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
                 <div
                   style={styles.icon}
@@ -70,18 +69,20 @@ function Services() {
                       {t("s1l7")}
                     </li>
                   </ul>
-                  <Link style={{
-                    background: "linear-gradient(to left, #009FFD, #28EDA5)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}  className="font-bold" to='/contact'>{t('ContactNow')}</Link>
+                  <Link
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    className="font-bold"
+                    to="/contact"
+                  >
+                    {t("ContactNow")}
+                  </Link>
                 </div>
               </div>
-
-              
             </div>
-
-
 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
@@ -116,15 +117,20 @@ function Services() {
                       {t("s2l6")}
                     </li>
                   </ul>
-                  <Link style={{
-                    background: "linear-gradient(to left, #009FFD, #28EDA5)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}  className="font-bold" to='/contact'>{t('ContactNow')}</Link>
+                  <Link
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    className="font-bold"
+                    to="/contact"
+                  >
+                    {t("ContactNow")}
+                  </Link>
                 </div>
               </div>
             </div>
-
 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
@@ -156,15 +162,20 @@ function Services() {
                       {t("s3l5")}
                     </li>
                   </ul>
-                  <Link style={{
-                    background: "linear-gradient(to left, #009FFD, #28EDA5)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}  className="font-bold" to='/contact'>{t('ContactNow')}</Link>
+                  <Link
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    className="font-bold"
+                    to="/contact"
+                  >
+                    {t("ContactNow")}
+                  </Link>
                 </div>
               </div>
             </div>
-            
 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
@@ -196,15 +207,20 @@ function Services() {
                       {t("s4l5")}
                     </li>
                   </ul>
-                  <Link style={{
-                    background: "linear-gradient(to left, #009FFD, #28EDA5)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}  className="font-bold" to='/contact'>{t('ContactNow')}</Link>
+                  <Link
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    className="font-bold"
+                    to="/contact"
+                  >
+                    {t("ContactNow")}
+                  </Link>
                 </div>
               </div>
             </div>
-
 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
@@ -226,17 +242,21 @@ function Services() {
                     <li className="text-body-color text-sm py-4 px-4 text-gray-600">
                       {t("s5l2")}
                     </li>
-
                   </ul>
-                  <Link style={{
-                    background: "linear-gradient(to left, #009FFD, #28EDA5)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}  className="font-bold" to='/contact'>{t('ContactNow')}</Link>
+                  <Link
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    className="font-bold"
+                    to="/contact"
+                  >
+                    {t("ContactNow")}
+                  </Link>
                 </div>
               </div>
             </div>
-
 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
@@ -265,15 +285,20 @@ function Services() {
                       {t("s6l4")}
                     </li>
                   </ul>
-                  <Link style={{
-                    background: "linear-gradient(to left, #009FFD, #28EDA5)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}  className="font-bold" to='/contact'>{t('ContactNow')}</Link>
+                  <Link
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    className="font-bold"
+                    to="/contact"
+                  >
+                    {t("ContactNow")}
+                  </Link>
                 </div>
               </div>
             </div>
-
 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
@@ -299,15 +324,20 @@ function Services() {
                       {t("s7l3")}
                     </li>
                   </ul>
-                  <Link style={{
-                    background: "linear-gradient(to left, #009FFD, #28EDA5)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}  className="font-bold" to='/contact'>{t('ContactNow')}</Link>
+                  <Link
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    className="font-bold"
+                    to="/contact"
+                  >
+                    {t("ContactNow")}
+                  </Link>
                 </div>
               </div>
             </div>
-
 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
               <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
@@ -322,17 +352,51 @@ function Services() {
                 </h4>
                 <p className="text-body-color">{t("s8p")}</p>
                 <div>
-                  
-                  <Link style={{
-                    background: "linear-gradient(to left, #009FFD, #28EDA5)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }}  className="font-bold" to='/contact'>{t('ContactNow')}</Link>
+                  <Link
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    className="font-bold"
+                    to="/contact"
+                  >
+                    {t("ContactNow")}
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* bortoqala */}
+
+            <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+              <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
+                <div
+                  style={styles.icon}
+                  className="bg-primary mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-full"
+                >
+                  <Icons.FaDesktop style={styles.inIcon} size={50} />
+                </div>
+                <h4 className="text-dark mb-3 text-xl font-semibold">
+                  {t("s9")}
+                </h4>
+                <p className="text-body-color text-[#6B7280] ">{t("s9p")}</p>
+                <div>
+                  <Link
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    className="font-bold"
+                    to="/contact"
+                  >
+                    {t("ContactNow")}
+                  </Link>
                 </div>
               </div>
             </div>
 
-
+            {/* bortoqala */}
           </div>
         </div>
       </section>

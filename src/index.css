@@ -1,3 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.bars_mobile_nav span {
+  position: relative;
+}

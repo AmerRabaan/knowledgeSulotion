@@ -8,7 +8,7 @@ function Career() {
   return (
     <div dir={i18n.language === "ar" ? "rtl" : "ltr"}>
       <section className="pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-gray-100">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto mb-12 max-w-[510px] text-center lg:mb-20">
@@ -34,7 +34,6 @@ function Career() {
           </div>
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-
               <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
                 <div
                   style={styles.icon}
@@ -47,23 +46,21 @@ function Career() {
                 </h4>
                 <p className="text-body-color">{t("cashVanDesc")}</p>
                 <div>
-
-                  <a style={{
-                    background: "linear-gradient(to left, #009FFD, #28EDA5)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                  }} target="_blank"  className="font-bold" href='https://docs.google.com/forms/d/e/1FAIpQLSc6rkC8Gkk1DvN9akCkecfaa_SsGwBfHwiF590MPak84XBVzA/viewform'>{t('apply')}</a>
+                  <a
+                    style={{
+                      background: "linear-gradient(to left, #009FFD, #28EDA5)",
+                      WebkitBackgroundClip: "text",
+                      WebkitTextFillColor: "transparent",
+                    }}
+                    target="_blank"
+                    className="font-bold"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSc6rkC8Gkk1DvN9akCkecfaa_SsGwBfHwiF590MPak84XBVzA/viewform"
+                  >
+                    {t("apply")}
+                  </a>
                 </div>
               </div>
-
-              
             </div>
-
-
-
-           
-
-
           </div>
         </div>
       </section>
